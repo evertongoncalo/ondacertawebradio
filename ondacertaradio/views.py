@@ -18,6 +18,8 @@ def newsletter(request):
             return redirect("/#contacto")
         else:
             messages.error(request,"E-mail NÃO salvo")
+            
+    return render(request, 'index.html', {'novoemail':novoemail} )
 
 
 def index(request):
