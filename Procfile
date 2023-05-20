@@ -1,1 +1,1 @@
-web: gunicorn ondacertaweb.wsgi --log-file -
+web: python manage.py migrate && gunicorn ondacertaweb.wsgi --log-file -
