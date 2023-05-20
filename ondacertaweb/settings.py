@@ -34,8 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-CSRF_TRUSTED_ORIGINS = ['https://ondacerta.up.railway.app/']
-CSRF_COOKIE_SECURE = True
+CSRF_TRUSTED_ORIGINS = ['https://*.*.railway.app/']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
