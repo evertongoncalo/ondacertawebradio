@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-CSRF_TRUSTED_ORIGINS = ['https://ondacerta.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://ondacerta.up.railway.app'] ##verificar isso rpa deploy
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
