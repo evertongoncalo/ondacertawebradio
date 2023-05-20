@@ -35,7 +35,7 @@ INSTALLED_APPS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = ['https://ondacerta.up.railway.app/']
-CSRF_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = True
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
