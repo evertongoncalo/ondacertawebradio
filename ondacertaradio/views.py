@@ -3,8 +3,10 @@ from django.contrib import messages
 from .models import Pessoa, Parceiro, Video, Noticia,Desporto, Foto
 from .forms import Newsletter
 from django.core.paginator import Paginator
+from django.views.decorators.csrf import csrf_protect
 
 
+@csrf_protect
 def newsletter(request):
     if request.method != 'POST':
         novoemail = Newsletter()
