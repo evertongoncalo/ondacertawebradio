@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-CSRF_TRUSTED_ORIGINS = ['https://*.*.railway.app/']
+CSRF_TRUSTED_ORIGINS = ['https://*']
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
