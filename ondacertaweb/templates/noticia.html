@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+
+
+{% block content %}
+
+<section class="container" style="margin-top: 60px;">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="text-center">
+          <img width="500" src="{{noticia.imagem.url}}" alt="{{noticia.titulo}}" class="img-fluid" style="border-radius: 15px;">
+        </div>
+        <h2 class="text-center mt-4">{{noticia.titulo}}</h2>
+        <p class="text-center text-muted">-- Publicada em : {{noticia.data_adicao}}</p>
+        <div class="mt-4">
+          <p>{{noticia.texto}}</p>
+        </div>
+        
+          
+          <div class="share-links">
+            <div class="blog-det-footer">
+                <ul class="blog-det-share">
+                <li>
+                    <h4>Compartilhe:</h4>
+                </li>
+                <li>
+                    <a href="{{ url_facebook }}" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="{{ url_twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="{{ url_linkedin }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+{% endblock %}
+
+{% block formulario %}
+{% endblock %}

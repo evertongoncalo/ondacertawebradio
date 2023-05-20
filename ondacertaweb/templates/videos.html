@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+
+
+{% block content %}
+<section class="video-part">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2>Vídeos</h2>
+                </div>
+            </div>
+        </div>        
+        <div class="row">
+            {% for video in page.object_list %}
+            <div class="col-md-6 col-lg-4">
+                <div class="video-card video-gape">
+                    <div class="video-img">
+                        <img src="{{video.imagem.url}}" alt="{{video.titulo}}" />
+                        <div class="video-overlay">
+                            <a class="venobox icon icon-inline" data-autoplay="true" data-vbtype="video" href="{{video.link}}"><i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                    <div class="video-content">
+                        <h5>{{video.titulo}}</h5>
+                        <p>{{video.descricao}}</p>
+                        <h6 style="color: lightslategray">Publicado em: {{video.data_adicao}}</h6>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <div class="col-lg-12">
+                <p>Sem vídeos no momento.</p>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li class="page-item">
+                    {% if page.has_previous %}
+                        <a class="page-link" href="{%url 'videos'%}?page={{page.previous_page_number}}"><i
+                                class="fal fa-long-arrow-alt-left"></i></a>
+                    {%endif%}
+                    </li>
+                    <li class="page-item">
+                    {% if page.has_next %}
+                    
+                        <a class="page-link" href="{%url 'videos'%}?page={{page.next_page_number}}"><i
+                                class="fal fa-long-arrow-alt-right"></i></a>
+                    {%endif%}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock %}
+{% block formulario %}
+{% endblock %}

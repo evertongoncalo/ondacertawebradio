@@ -1,0 +1,889 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+    {% block content %}
+
+    <!--BANNERS -->
+    <main class="banner-slider">
+        <section class="banner-1" style="background: url({% static 'assets/imagens/0mw5jp.jpg' %});">
+            <div class="banner-oly">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="banner-content">
+                                <h1 style="font-size: 70px;background-color: rgba(0, 0, 0, 0.5);display: inline-block; padding:10px; ">ONDA CERTA</h1>
+                                <br>
+                                <H2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 35px; color: white;">Web Rádio on-line</H2>
+                                <br><br>
+                                <p style="font-size: 20px;background-color: rgba(0, 0, 0, 0.5);display: inline-block; padding:3px;">
+                                    de Pombal para o mundo...</p>
+                                    <!--</p><a href="index-2.html#" class="btn btn-inline"><i
+                                        class="far fa-satellite-dish"></i><span>listen us live</span></a> -->
+                                    <!--botão do banner-->
+                            <!--</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="banner-2" style="background: url(assets/img/banner-2.jpg);">
+            <div class="banner-oly">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="banner-content">
+                                <h1>WE ARE FMRADIO STAY TUNE - 88.0</h1>
+                                <p>
+                                    It is a long established fact that a reader will be distracted by the readable <br>
+                                    content
+                                    of a page when looking at its layout.
+                                </p>
+                                <a href="index-2.html#" class="btn btn-inline"><i
+                                        class="far fa-satellite-dish"></i><span>listen us live</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="banner-3" style="background: url(assets/img/banner-3.jpg);">
+            <div class="banner-oly">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="banner-content">
+                                <h1>WE ARE FMRADIO STAY TUNE - 88.0</h1>
+                                <p>
+                                    It is a long established fact that a reader will be distracted by the readable <br>
+                                    content
+                                    of a page when looking at its layout.
+                                </p>
+                                <a href="index-2.html#" class="btn btn-inline"><i
+                                        class="far fa-satellite-dish"></i><span>listen us live</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <!--FINAL DOS BANNERS -->
+
+    <!--SOBRE -->
+    <section id="quemsomos" style="scroll-margin-top: 100px;" class="section about-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="about-img"><a href="#" class="about-1"><img src="{% static 'assets/imagens/0jbyu157c5.jpg' %}"
+                                alt="about-1"></a><a href="#"></a></div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="about-content">
+                        <h5 style="font-size: 32px; color: var(--cor1);">Estatuto Editorial</h5>
+                        <br>
+                        <p>A Onda Certa é uma web rádio generalista orientado por critérios de rigor editorial, sem
+                            qualquer dependência de ordem ideológica, política e económica; A Onda Certa compromete-se a
+                            apostar numa informação diversificada, abrangendo os mais diversos campos de actividade e
+                            correspondendo às motivações e interesses do público da região onde o jornal está
+                            implantado; A Onda Certa reconhece como seu único limite o espaço privado dos cidadãos e tem
+                            como limiar de existência a sua credibilidade pública; A ONDA Certa compromete-se a fazer do
+                            interesse público a sua referência e a respeitar as pessoas e a boa-fé dos ouvintes A ONDA
+                            CERTA compromete- se a agir de acordo com os princípios deontológicos e a ética profissional
+                            dos jornalistas.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FINAL DE SOBRE -->
+
+    <!--PROGRAMAÇÃO --> 
+    <section id="programacao" class="section show-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Programação</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="show-menu" class="show-menu">
+                        <ul class="nav nav-tabs">
+                            <li><a id="segunda-" href="#segunda" class="nav-link" data-toggle="tab">Segunda-Feira</a></li> <!-- trocar no navalink active-->
+                            <li><a id="terca-" href="#terca" class="nav-link" data-toggle="tab">Terça-Feira</a></li>
+                            <li><a id="quarta-" href="#quarta" class="nav-link" data-toggle="tab">Quarta-Feira</a></li>
+                            <li><a id="quinta-" href="#quinta" class="nav-link " data-toggle="tab">Quinta-Feira</a></li>
+                            <li><a id="sexta-" href="#sexta" class="nav-link" data-toggle="tab">Sexta-Feira</a></li>
+                            <li><a id="sabado-" href="#sabado" class="nav-link" data-toggle="tab">Sábado</a></li>
+                            <li><a id="domingo-" href="#domingo" class="nav-link" data-toggle="tab">Domingo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="tab-pane" id="segunda"> <!-- trocar no tab-pana para active para mostarr o dia corrente-->
+                        <div class="row">
+                            <div class="container">
+
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>HORÁRIO</th>
+                                            <th>PROGRAMA</th>
+                                        </tr>
+
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td id="6SF">06H00</td>
+                                            <td>BOM DIA</td>                                            
+                                        </tr>
+                                        <tr>
+                                            <td id="9SF">09H00</td>
+                                            <td>ONDA DA MANHÃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="12SF">12H00</td>
+                                            <td>MADE IN PORTUGAL</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="14SF">14H00</td>
+                                            <td>RADAR 76</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="15SF">15H00</td>
+                                            <td>ONDA DA TARDE</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="18SF">18H00</td>
+                                            <td>AVENIDA DO BRASIL</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="20SF">20H00</td>
+                                            <td>SÓ SUCESSOS</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="21SF">21H00</td>
+                                            <td>FLASH DESPORTIVO</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="22SF">22H00</td>
+                                            <td>OC BY NIGHT</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="24SF">24H00</td>
+                                            <td>ESTAÇÃO DA MEIA NOITE</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="2SF">02H00</td>
+                                            <td>MADRUGADAS</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="4Sf">04H00</td>
+                                            <td>FLASHBACK</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="tab-pane" id="terca">
+                        <div class="row">
+                            <div class="container">
+
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>HORÁRIO</th>
+                                            <th>PROGRAMA</th>
+                                        </tr>
+
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td id="6TF">06H00</td>
+                                            <td>BOM DIA</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="9TF">09H00</td>
+                                            <td>ONDA DA MANHÃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="12TF">12H00</td>
+                                            <td>MADE IN PORTUGAL</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="14TF">14H00</td>
+                                            <td>RADAR 76</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="15TF">15H00</td>
+                                            <td>ONDA DA TARDE</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="18TF">18H00</td>
+                                            <td>AVENIDA BRASIL</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="20TF">20H00</td>
+                                            <td>SÓ SUCESSOS</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="21TF">21H00</td>
+                                            <td>FLASH DESPORTIVO</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="22TF">22H00</td>
+                                            <td>OC BY NIGHT</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="23TF">23H00</td>
+                                            <td>ONDA ALTERNATIVA</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="24TF">24H00</td>
+                                            <td>ESTAÇÃO DA MEIA NOITE</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="2TF">02H00</td>
+                                            <td>MADRUGADAS</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="4TF">04H00</td>
+                                            <td>FLASHBACK</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="tab-pane" id="quarta">
+                        <div class="row">
+                            <div class="container">
+
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>HORÁRIO</th>
+                                            <th>PROGRAMA</th>
+                                        </tr>
+
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td id="6QF">06H00</td>
+                                            <td>BOM DIA</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="9QF">09H00</td>
+                                            <td>ONDA DA MANHÃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="12QF">12H00</td>
+                                            <td>ONDA DO MEIO DIA</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="14QF">14H00</td>
+                                            <td>RADAR 76</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="15QF">15H00</td>
+                                            <td>ONDA DA TARDE</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="18QF">18H00</td>
+                                            <td>AVENIDA DO BRASIL</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="20QF">20H00</td>
+                                            <td>SÓ SUCESSOS</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td id="22QF">22H00</td>
+                                            <td>OC BY NIGHT</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="24QF">24H00</td>
+                                            <td>ESTAÇÃO DA MEIA NOITE</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="2QF">02H00</td>
+                                            <td>MADRUGADAS</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="4QF">04H00</td>
+                                            <td>FLASHBACK</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="tab-pane" id="quinta">
+                        <div class="row">
+                            <div class="container">
+
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>HORÁRIO</th>
+                                            <th>PROGRAMA</th>
+                                        </tr>
+
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td id="6QI">06H00</td>
+                                            <td>BOM DIA</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="9QI">09H00</td>
+                                            <td>ONDA DA MANHÃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="12QI">12H00</td>
+                                            <td>MADE IN PORTUGAL</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="14QI">14H00</td>
+                                            <td>RADAR 76</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="15QI">15H00</td>
+                                            <td>ONDA DA TARDE</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="18QI">18H00</td>
+                                            <td>AVENIDA BRASIL</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="20QI">20H00</td>
+                                            <td>SÓ SUCESSOS</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td id="22QI">22H00</td>
+                                            <td>OC BY NIGHT</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="24QI">24H00</td>
+                                            <td>ESTAÇÃO DA MEIA NOITE</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="2QI">02H00</td>
+                                            <td>MADRUGADAS</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="4QI">04H00</td>
+                                            <td>FLASHBACK</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="tab-pane" id="sexta">
+                        <div class="row">
+                            <div class="container">
+
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>HORÁRIO</th>
+                                            <th>PROGRAMA</th>
+                                        </tr>
+
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td id="6SX">06H00</td>
+                                            <td>BOM DIA</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="9SX">09H00</td>
+                                            <td>ONDA DA MANHÃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="12SX">12H00</td>
+                                            <td>MADE IN PORTUGAL</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="14SX">14H00</td>
+                                            <td>RADAR 76</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="15SX">15H00</td>
+                                            <td>ONDA DA TARDE</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="18SX">18H00</td>
+                                            <td>AVENIDA BRASIL</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="20SX">20H00</td>
+                                            <td>SÓ SUCESSOS</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="22SX">22H00</td>
+                                            <td>JAZZNIGHT</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="24SX">24H00</td>
+                                            <td>DANCE 90'S</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="2SX">02H00</td>
+                                            <td>MADRUGADAS</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="4SX">04H00</td>
+                                            <td>FLASHBACK</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="tab-pane" id="sabado">
+                        <div class="row">
+                            <div class="container">
+
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>HORÁRIO</th>
+                                            <th>PROGRAMA</th>
+                                        </tr>
+
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td id="6S">06H00</td>
+                                            <td>DESPERTAR</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="9S">09H00</td>
+                                            <td>MADE IN PORTUGAL</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="11S">11H00</td>
+                                            <td>ONDA POPULAR</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="13S">13H00</td>
+                                            <td>FLASHBACK</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="15S">15H00</td>
+                                            <td>ONDA DE FIM DE SEMANA</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="18S">18H00</td>
+                                            <td>UMA ONDA NO AR</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="20S">20H00</td>
+                                            <td>RADAR 76</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="22S">22H00</td>
+                                            <td>ONDA ALTERNATIVA</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="24S">24H00</td>
+                                            <td>IN THE HOUSE</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="2S">02H00</td>
+                                            <td>MADRUGADAS</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="4S">04H00</td>
+                                            <td>FLASHBACK</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="tab-pane" id="domingo">
+                        <div class="row">
+                            <div class="container">
+
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>HORÁRIO</th>
+                                            <th>PROGRAMA</th>
+                                        </tr>
+
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td id="6D">06H00</td>
+                                            <td>DESPERTAR</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="9D">09H00</td>
+                                            <td>MADE IN PORTUGAL</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="11D">11H00</td>
+                                            <td>ONDA POPULAR</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="13D">13H00</td>
+                                            <td>FLASHBACK</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="15D">15H00</td>
+                                            <td>TARDE DESPORTIVA</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="18D">18H00</td>
+                                            <td>UMA ONDA NO AR</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="20D">20H00</td>
+                                            <td>RADAR 76</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="22D">22H00</td>
+                                            <td>ONDA ALTERNATIVA</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="24D">24H00</td>
+                                            <td>IN THE HOUSE</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="2D">02H00</td>
+                                            <td>MADRUGADAS</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="4D">04H00</td>
+                                            <td>FLASHBACK</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+
+    </section>
+
+
+    <section class="section team-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2> Nossa Equipa</h2>
+                        <br><br>
+                        <h4>conhece quem está na ONDA CERTA</h4>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="team-slider slider-arrow">
+                        {% for pessoa in pessoas %}
+                            <div class="team-card">
+                                <div class="team-img"><img src="{{pessoa.foto.url}}" alt="{{pessoa.nome}}">
+                                    <div class="team-overlay">
+                                        <ul class="team-icon">
+                                            <li><a class="icon icon-inline" href="{{pessoa.facebook}}" target="_blank"><i
+                                                        class="fab fa-facebook-f"></i></a></li>
+                                            <li><a class="icon icon-inline" href="{{pessoa.instagram}}" target="_blank"><i
+                                                        class="fab fa-instagram"></i></a></li>
+                                            <li><a class="icon icon-inline" href="{{pessoa.linkedin}}" target="_blank"><i
+                                                        class="fab fa-linkedin-in"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="team-meta">
+                                    <h4>{{ pessoa.nome }}</h4>
+                                    
+                                </div>
+                            </div>
+                        {% empty %}
+                        <p>Sem pessoas</p>
+                        {% endfor%}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--<div class="col-lg-12">
+                    <div class="team-btn"><a class="btn btn-outline" href="team.html"><span>Mostrar mais</span> <i
+                                class="far fa-arrow-right ml-2"></i></a></div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+    <section id="videos" class="section video-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Videos</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="video-slider slider-arrow">
+                        
+                        {% for video in videos|slice:":10" %}
+                        <div class="video-card">
+                            <div class="video-img"><img src="{{ video.imagem.url }}" alt="{{ video.titulo }}">
+                                <div class="video-overlay"><a class="venobox icon icon-inline" data-autoplay="true"
+                                        data-vbtype="video" href="{{video.link}}"><i
+                                            class="far fa-play"></i></a>
+                                        </div>
+                            </div>
+                            <div class="video-content">
+                                <h5>{{ video.titulo }}</h5>
+                                <p>{{ video.descricao }}</p>
+                            </div>
+                        </div>
+                        {% empty %}
+                        <p>Sem videos no momento</p>
+                        {% endfor %} 
+                        
+                    </div>
+                
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="team-btn"><a class="btn btn-outline" href="{% url 'videos' %}"><span>mostrar mais</span> <i
+                                class="far fa-arrow-right ml-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section gallery-part" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2> Galeria de Fotos</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="gallery-content">
+                        <ul class="gallery-list" style="height: 80%;">
+                            {% if fotos %}                            
+                            <li class="hori-img"><img  src="{{fotos.0.imagem.url}}" alt="{{fotos.0.imagem.titulo}}"></li>                           
+                            <li class="big-img" ><img src="{{fotos.1.imagem.url}}" alt="{{fotos.1.imagem.titulo}}"></li>                      
+                            <li><img  src="{{fotos.2.imagem.url}}" alt="{{fotos.2.imagem.titulo}}"></li>                          
+                            <li><img  src="{{fotos.3.imagem.url}}" alt="{{fotos.3.imagem.titulo}}"></li>
+                            <li><img  src="{{fotos.4.imagem.url}}" alt="{{fotos.4.imagem.titulo}}"></li>
+                            <li><img src="{{fotos.5.imagem.url}}" alt="{{fotos.5.imagem.titulo}}"></li>
+                            <li class="hori-img"><img  src="{{fotos.6.imagem.url}}" alt="{{fotos.6.imagem.titulo}}"></li>
+                            {% else %}
+                            <p>Sem fotos no momento.</p>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="gallery-btn"><a class="btn btn-outline" href="{% url 'fotos' %}"><span>Ver mais</span> <i
+                                class="far fa-arrow-right ml-2"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <!-- NOTICIAS -->
+    <section class="section blog-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Notícias</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="blog-slider slider-arrow" style="background-color: grey border-radious: 10px">
+                        {% for noticia in noticias|slice:":10" %}
+                            <div class="blog-card"><img src="{{ noticia.imagem.url }}" alt="{{noticia.titulo}}">
+                                <div class="blog-overlay">
+                                    
+                                    <h3 style="color: white">{{ noticia.titulo }}</h3>                            
+                                    
+                                    <h6 style="color: white;"> Publicado em: {{ noticia.data_adicao}} </h6>
+                                    
+                                    <a class="btn btn-outline" href={% url 'noticia' noticia_id=noticia.id %}>Saiba Mais</a>
+
+                                </div>
+                            </div>
+                        {% empty %}
+                        <p>Sem Noticias no momento</p>
+                        {% endfor %}
+                                                         
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="blog-btn"><a class="btn btn-outline" href={% url 'noticias' %}><span>Ver todas</span> <i
+                                class="far fa-arrow-right ml-2"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- DESPORTO final noticias -->
+
+
+    <!-- DESPORTO -->
+    <section class="section blog-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Desporto</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="blog-slider slider-arrow" style="background-color: grey border-radious: 10px">
+                        {% for desporto in desportos %}
+                        <div class="blog-card"><img src="{{ desporto.imagem.url }}" alt="{{desporto.titulo}}">
+                            <div class="blog-overlay">
+                                <p style="color: white"><i class="far fa-clock " style="color: var(--cor1);"></i> {{desporto.descricao1}} <br> {{desporto.descricao2}}</p>
+                                <h3 style="color: white ;font-size: 36px">{{desporto.titulo}}</h3>                            
+                                
+                            </div>
+                        </div>
+                        {% empty %}
+                        <p>Sem Programa no momento</p>
+                        {% endfor %}                        
+                                              
+                        
+                    </div>
+                </div>
+            </div>
+            <!--<div class="row">
+                <div class="col-lg-12">
+                    <div class="blog-btn"><a class="btn btn-outline" href="#"><span>Ver mais</span> <i
+                                class="far fa-arrow-right ml-2"></i></a></div>
+                </div> -->
+            </div>
+        </div>
+    </section>  <!-- FINAL DESPORTO -->
+
+    <section class="section blog-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Nossos parceiros</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                    {% for parceiro in parceiros|slice:":12" %}
+                        <div class="col"><a href="{{parceiro.link}}" target="_blank"><img height=120 width=220 src="{{parceiro.imagem.url}}" alt="{{parceiro.nome}}"></a></div>
+                    
+                    {% empty %}
+                    <p>Sem parceiros no momento</p>
+                    {% endfor%}
+                  
+                
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                    <div class="blog-btn"><a class="btn btn-outline" href="{% url 'parceiros' %}"><span>Ver Todos</span> <i
+                                class="far fa-arrow-right ml-2"></i></a></div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+    </section>
+
+    {% endblock %}

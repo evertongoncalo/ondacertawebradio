@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<section class="section blog-part">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2>Nossos parceiros</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                {% for parceiro in parceiros %}
+                    <div class="col"><a href="{{parceiro.link}}" target="_blank"><img height=120 width=220 src="{{parceiro.imagem.url}}" alt="{{parceiro.nome}}"></a></div>
+                
+                {% empty %}
+                <p>Sem parceiros no momento</p>
+                {% endfor%}
+              
+            
+            </div>
+          </div>
+          
+        </div>
+
+
+    </div>
+
+</section>
+
+
+{%endblock%}
+{% block formulario %}
+{% endblock %}

@@ -1,0 +1,190 @@
+{% load static %}
+{% load bootstrap5 %}
+
+<!DOCTYPE html>
+<html lang="pt">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>ONDA CERTA :: Web Rádio on-line :: </title>
+    <link rel="icon" href="{% static 'assets/img/favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/venobox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="loader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+
+    <div class="back2top-btn"><a href="#"><i class="fal fa-long-arrow-alt-up"></i></a></div> 
+
+    <header class="header-part">
+        <div class="header-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6"><a class="header-logo" href={% url 'index'%}><img src="{% static 'assets/img/logo.png' %}"
+                                alt="logo"></a></div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <nav class="navbar-part">
+        <div class="navbar-bg">
+            <div class="container">
+                <div class="navbar-content"><a class="navbar-logo" href="{% url 'index' %}"><img src="{% static 'assets/img/logo.png' %}"
+                            alt="logo"></a><button class="navbar-toggle" type="button"><i
+                            class="fas fa-bars"></i></button>
+                    <div class="navbar-overlay">
+                        <div class="navbar-slide">
+                            <div class="slide-head"><a href="{% url 'index' %}"><img src="{% static 'assets/img/logo.png' %}"
+                                        alt="logo"></a><button class="cencel"><i class="fas fa-times"></i></button>
+                            </div>
+                            <ul class="navbar-list">
+                                
+                                <li class="navbar-item"><a class="navbar-link" href="{% url 'index' %}#quemsomos"><span><i
+                                                class=""></i> EDITORIAL</span></a></li>
+                                <li class="navbar-item"><a class="navbar-link" href="{% url 'index' %}#programacao"><span><i
+                                                class=""></i> PROGRAMAÇÃO</span></a></li>
+                                <li class="navbar-player">
+                                    <div class="player"><button class="player-btn" id="play-pause-button"><i
+                                                class="far fa-play"></i></button></div>
+                                </li>
+                                <li class="navbar-item"><a class="navbar-link" href="{% url 'index' %}#videos"><span><i
+                                                ></i> VIDEOS</span></a></li>
+                                <li class="navbar-item"><a class="navbar-link" href="{% url 'index' %}#contacto"><span><i></i> CONTACTO</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </nav>
+
+    <div class="bottom-player">
+        <div class="player"><button class="player-btn" id="play-pause-button2"><i class="far fa-play"></i></button>
+        </div>
+    </div>
+
+    <div class="audio-part">
+        <audio id="sound">
+            <source src="https://freeuk21.listen2myradio.com/live.mp3?typeportmount=s1_28364_stream_972073193" type="audio/mpeg">
+        </audio>
+    </div> 
+    
+
+
+    {% block content %} {% endblock %}
+
+
+
+    <footer id="contacto"class="footer-part footer-gape">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-logo">
+                        <a href="#"><img src="{% static 'assets/img/logo.png'%}" alt="logo"></a>
+                        <ul>
+                            <li><a class="icon icon-inline" href="https://www.facebook.com/profile.php?id=100063898966693" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <!--<li><a class="icon icon-inline" href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="icon icon-inline" href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a class="icon icon-inline" href="#"><i class="fab fa-linkedin-in"></i></a></li>-->
+                            <li><a class="icon icon-inline" href="https://www.instagram.com/ondacerta17/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    {% block formulario%}
+                    <form action="{% url 'subscribe'%}" class="news-form" method="POST">
+                        
+                        {% csrf_token %}
+                        {{ subscribe }}
+                        <input id="email" name="email" type="email" class="form-control" placeholder="Deixa teu email"/>
+                        <button class="btn btn-inline" type="submit"><i class="far fa-envelope"></i><span class="d-none d-md-inline" >Assine nossa </span>Newsletter 
+                        </span></button>
+                        <br><br>
+                        {% bootstrap_messages %}
+                        
+                    </form>
+                    {% endblock formulario %}
+                                        
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                
+                <div class="col-lg-3">
+                    <div class="footer-heading">
+                        <h3>Navegação</h3>
+                    </div>
+                    <ul class="footer-link">
+                        <li><a href="{% url 'index' %}#quemsomos"><i class="fas fa-angle-right"></i>Quem Somos</a></li>
+                        <li><a href="{% url 'index' %}#programacao"><i class="fas fa-angle-right"></i>Programação</a></li>
+                        <li><a href="{% url 'videos' %}"><i class="fas fa-angle-right"></i>Videos</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-heading">
+                        <h3>Contacto</h3>
+                        
+                    </div>
+                    <ul class="footer-address">
+                        <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=350&amp;height=220&amp;hl=en&amp;q=Rua de Santa Luzia, n.23 3100-483 Pombal&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://capcuttemplate.org/">Capcuttemplate.org</a></div><style>.mapouter{position:relative;text-align:right;width:310px;height:220px;}.gmap_canvas {overflow:hidden;background:none!important;width:310px;height:220px;}.gmap_iframe {width:310px!important;height:220px!important;}</style></div>
+                        <li><i class="far fa-map-marker-alt"></i>
+                            <p>Pombal Shopping<br>Rua de Santa Luzia, n.23<br>3100-483 Pombal</p>
+                        </li>
+                        <li><i class="far fa-envelope"></i>
+                            <p>ondacerta17@gmail.com</p>
+                        </li>
+                        <li><i class="far fa-phone"></i>
+                            <p>916 061 680</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <section class="copy-part">
+        <div class="container">
+            <p>&copy; <span id="date"></span> Onda Certa - Web Rádio, Todos os direitos reservados.
+        </div>
+    </section>
+
+
+
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick.js' %}"></script>
+    <script src="{% static 'assets/js/counterup.min.js' %}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/counterup.js' %}"></script>
+    <script src="{% static 'assets/js/venobox.min.js' %}"></script>
+    <script src="{% static 'assets/js/venobox.js' %}"></script>
+    <script src="{% static 'assets/js/player.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    {% bootstrap_javascript %}
+</body>
+
+
+</html>
