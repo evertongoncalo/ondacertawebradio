@@ -3,6 +3,15 @@
 
 
 {% block content %}
+<head>
+  <!-- Outras tags do cabeçalho da página -->
+  
+  <!-- Meta tags Open Graph -->
+  <meta property="og:title" content="{{noticia.titulo}}" />
+  <meta property="og:image" content="{{noticia.imagem.url}}" />
+  
+  <!-- Outras tags do cabeçalho da página -->
+</head>
 
 <section class="container" style="margin-top: 60px;">
     <div class="row justify-content-center">
