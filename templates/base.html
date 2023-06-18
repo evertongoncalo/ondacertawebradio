@@ -87,7 +87,7 @@
 
     <div class="audio-part">
         <audio id="sound">
-            <source src="" type="audio/mpeg">
+            <source src="https://freeuk21.listen2myradio.com/live.mp3?typeportmount=s1_28364" type="audio/mpeg">
         </audio>
     </div> 
     
@@ -183,6 +183,11 @@
     <script src="{% static 'assets/js/venobox.js' %}"></script>
     <script src="{% static 'assets/js/player.js' %}"></script>
     <script src="{% static 'assets/js/main.js' %}"></script>
+    <script>
+        window.onload = function() {
+          location.reload();
+        };
+      </script>
     {% bootstrap_javascript %}
 </body>
 
