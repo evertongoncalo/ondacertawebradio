@@ -184,10 +184,18 @@
     <script src="{% static 'assets/js/player.js' %}"></script>
     <script src="{% static 'assets/js/main.js' %}"></script>
     <script>
-        window.onload = function() {
-          location.reload();
-        };
+        document.addEventListener('DOMContentLoaded', function() {
+          window.performance.mark('startReload'); // Marca o tempo de início da atualização
+          location.reload(); // Recarrega a página
+        });
+        
+        // Evento disparado quando a página é completamente carregada novamente
+        window.addEventListener('load', function() {
+          const reloadDuration = window.performance.now() - window.performance.getEntriesByName('startReload')[0].startTime;
+          console.log('Tempo de recarga: ' + reloadDuration + 'ms');
+        });
       </script>
+      
     {% bootstrap_javascript %}
 </body>
 
