@@ -76,7 +76,7 @@ function adicionarAtivo() {
             var hr = document.getElementById('4SF');
             hr.insertAdjacentHTML('beforeend', '  <img width=25 height=30 src="https://i.postimg.cc/sDS32h4t/sound.gif" alt="sound">');
         }
-        else if (horaAtual >= 6 && horaAtual < 9){
+        else if (horaAtual >= 5 && horaAtual < 9){
             var hr = document.getElementById('6SF');
             hr.insertAdjacentHTML('beforeend', '  <img width=25 height=30 src="https://i.postimg.cc/sDS32h4t/sound.gif" alt="sound">');
         }
@@ -135,7 +135,7 @@ function adicionarAtivo() {
             var hr = document.getElementById('6TF');
             hr.insertAdjacentHTML('beforeend', '  <img width=25 height=30 src="https://i.postimg.cc/sDS32h4t/sound.gif" alt="sound">');
         }
-        else if (horaAtual >= 9 && horaAtual < 11){
+        else if (horaAtual >= 9 && horaAtual < 12){
             var hr = document.getElementById('9TF');
             hr.insertAdjacentHTML('beforeend', '  <img width=25 height=30 src="https://i.postimg.cc/sDS32h4t/sound.gif" alt="sound">');
         }
