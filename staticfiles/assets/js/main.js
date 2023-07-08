@@ -385,3 +385,5 @@ function adicionarAtivo() {
   // Chamar a função quando o documento estiver pronto
 
 document.addEventListener('DOMContentLoaded', adicionarAtivo);
+
+fetch('https://freeuk21.listen2myradio.com/live.mp3?typeportmount=s1_28364_stream')
