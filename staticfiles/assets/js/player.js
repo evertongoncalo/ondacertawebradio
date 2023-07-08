@@ -1,12 +1,12 @@
 async function radio(){
   try {
     const play = await fetch('https://freeuk21.listen2myradio.com/live.mp3?typeportmount=s1_28364_stream')
-    
+    return play
   } catch (error) {
     console.log(error)
     
   }
-  return play
+  
  
   
 }
