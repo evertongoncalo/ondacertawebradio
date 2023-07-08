@@ -13,7 +13,7 @@ async function radio(){
 
 document.addEventListener('DOMContentLoaded', function() {
     $('#play-pause-button').click(function() {
-      var audio = $(radio()).get(0);
+      var audio = $('https://freeuk21.listen2myradio.com/live.mp3?typeportmount=s1_28364_stream').get(0);
       $(this).toggleClass('active');
   
       if ($(this).hasClass('active')) {
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   
     $('#play-pause-button2').click(function() {
-      var audio = $(radio()).get(0);
+      var audio = $('https://freeuk21.listen2myradio.com/live.mp3?typeportmount=s1_28364_stream').get(0);
       $(this).toggleClass('active');
   
       if ($(this).hasClass('active')) {
