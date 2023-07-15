@@ -12,5 +12,6 @@ urlpatterns = [
     path('subscribe/', views.newsletter, name="subscribe"),
     path('noticia/<int:noticia_id>', views.noticia, name="noticia"),
     path('noticias/', views.noticias, name="noticias"),
+    path('admin/', views.admin, name="admin"),
     
 ]

@@ -87,6 +87,9 @@ def noticias(request):
      
      context = {'page':page,}
      return render(request, 'noticias.html', context)
+ 
+def admin(request):
+    return redirect('admin/')
     
 
 
